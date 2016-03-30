@@ -1,6 +1,11 @@
 package wargame;
 
 public class Topcu extends Savasci {
+	public static final int MIN_CAN = 300;
+	public static final int MAX_CAN= 400;
+	public static final int MIN_VURUSGUCU = 60;
+	public static final int MAX_VURUSGUCU = 80;
+	
 	private int vurusGucu;
 	private boolean topHazir;
 
@@ -8,11 +13,11 @@ public class Topcu extends Savasci {
 		topuYukle();
 		setVurusGucu(vurusGucu);
 		this.deneyim = deneyim;
-		can = randInt(300, 400);
+		can = randInt(MIN_CAN, MAX_CAN);
 	}
 	
 	public void setVurusGucu(int vurusGucu) {
-		if (vurusGucu > 80 && vurusGucu < 60) {
+		if (vurusGucu >  MAX_VURUSGUCU  && vurusGucu < MIN_VURUSGUCU ) {
 			System.out.println("Ok sayısı 60-80 arasında olmalıdır.");
 		} else {
 			this.vurusGucu = vurusGucu;
