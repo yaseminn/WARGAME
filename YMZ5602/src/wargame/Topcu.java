@@ -36,15 +36,23 @@ public class Topcu extends Savasci {
 		
 	}
 	
+	/*
+	 * savunma +0.9
+	 * saldırı +3.2
+	 */
 	@Override
 	public void deneyimArtir() {
-		// TODO Auto-generated method stub
+		if(saldiri){
+			getDeneyim() + 3.2;
+		}else{
+			getDeneyim() + 0.9;
+		}
+		
 
 	}
 
 	@Override
 	public int saldiri() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 }

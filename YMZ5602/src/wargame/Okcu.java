@@ -49,9 +49,17 @@ public void savunma(){
 	
 } 
 
+/*
+ * savunma + 0.8
+ * saldırı + 4.5
+ */
 @Override
 public void deneyimArtir() {
-	// TODO Auto-generated method stub
+	if(saldiri){
+		getDeneyim() + 4.5;
+	}else{
+		getDeneyim() + 0.8;
+	}
 	
 }
 

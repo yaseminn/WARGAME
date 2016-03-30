@@ -13,14 +13,17 @@ public class Kale extends Savasci {
 		return deneyim;
 	}
 	
-	@Override
-	public int saldiri() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+
+	
+	
 	@Override
 	public void deneyimArtir() {
-		// TODO Auto-generated method stub
+		getDeneyim() + 1.2;
+	}
+
+	@Override
+	public int saldiri() {
 		
+		return 0;
 	}
 }
